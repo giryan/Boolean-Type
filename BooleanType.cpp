@@ -2313,8 +2313,9 @@ char ToLower(char const C)
     case '\xfe':
         return to_lower<'\xfe'>::value;
     case '\xff':
-        return to_lower<'\xff'>::value;        default:
-            return 0;
+        return to_lower<'\xff'>::value;
+    default:
+        return 0;
     }
 }
 
@@ -2382,38 +2383,336 @@ template<> class str_i_cmp<0>
         return 0;
     }
 };
+template<int Len1, int Len2> class str_i_cmp_2
+{
+    int operator()(char * const str1, char * const str2)
+    {
+        return 0;
+    }
+};
 
+template<int Len1> class str_i_cmp_2<Len1, Len1>
+{
+    int operator()(char * const str1, char * const str2)
+    {
+        return str_i_cmp(str1, str2);
+    }
+};
 bool Equal(Boolean boolean1, Boolean boolean2)
 {
     int boolean1len = strlen(boolean1);
     int boolean2len = strlen(boolean2);
-    if(boolean1len != boolean2len)
-        return false;
     
     switch(boolean1len)
     {
     case 0:
-        return str_i_cmp<0>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<0, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<0, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<0, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<0, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<0, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<0, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<0, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<0, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<0, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<0, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<0, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 1:
-        return str_i_cmp<1>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<1, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<1, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<1, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<1, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<1, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<1, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<1, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<1, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<1, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<1, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<1, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 2:
-        return str_i_cmp<2>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<2, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<2, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<2, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<2, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<2, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<2, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<2, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<2, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<2, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<2, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<2, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 3:
-        return str_i_cmp<3>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<3, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<3, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<3, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<3, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<3, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<3, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<3, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<3, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<3, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<3, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<3, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 4:
-        return str_i_cmp<4>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<4, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<4, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<4, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<4, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<4, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<4, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<4, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<4, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<4, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<4, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<4, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 5:
-        return str_i_cmp<5>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<5, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<5, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<5, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<5, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<5, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<5, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<5, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<5, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<5, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<5, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<5, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 6:
-        return str_i_cmp<6>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<6, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<6, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<6, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<6, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<6, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<6, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<6, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<6, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<6, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<6, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<6, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 7:
-        return str_i_cmp<7>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<7, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<7, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<7, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<7, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<7, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<7, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<7, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<7, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<7, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<7, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<7, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 8:
-        return str_i_cmp<8>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<8, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<8, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<8, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<8, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<8, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<8, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<8, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<8, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<8, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<8, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<8, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 9:
-        return str_i_cmp<9>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<9, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<9, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<9, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<9, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<9, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<9, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<9, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<9, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<9, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<9, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<9, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     case 10:
-        return str_i_cmp<10>(boolean1, boolean2) == 0;
+        switch(boolean2len)
+        {
+        case 0:
+            return str_i_cmp_2<10, 0>(boolean1, boolean2) == 0;
+        case 1:
+            return str_i_cmp_2<10, 1>(boolean1, boolean2) == 0;
+        case 2:
+            return str_i_cmp_2<10, 2>(boolean1, boolean2) == 0;
+        case 3:
+            return str_i_cmp_2<10, 3>(boolean1, boolean2) == 0;
+        case 4:
+            return str_i_cmp_2<10, 4>(boolean1, boolean2) == 0;
+        case 5:
+            return str_i_cmp_2<10, 5>(boolean1, boolean2) == 0;
+        case 6:
+            return str_i_cmp_2<10, 6>(boolean1, boolean2) == 0;
+        case 7:
+            return str_i_cmp_2<10, 7>(boolean1, boolean2) == 0;
+        case 8:
+            return str_i_cmp_2<10, 8>(boolean1, boolean2) == 0;
+        case 9:
+            return str_i_cmp_2<10, 9>(boolean1, boolean2) == 0;
+        case 10:
+            return str_i_cmp_2<10, 10>(boolean1, boolean2) == 0;
+        default:
+            return false;
+        }
     default:
         return false;
     }
