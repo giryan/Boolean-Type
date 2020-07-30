@@ -1,5 +1,5 @@
 //Public Interface:
-typedef char * const Boolean;
+typedef char Boolean[];
 bool Equal(Boolean boolean1, Boolean boolean2);
 Boolean True = "True";
 Boolean False = "False";
