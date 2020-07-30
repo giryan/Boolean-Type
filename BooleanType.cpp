@@ -4,11 +4,9 @@ bool Equal(Boolean boolean1, Boolean boolean2);
 Boolean True = "True";
 Boolean False = "False";
 
-
-
 int main()
 {
-    return True == True && False != True;
+    return Equal(True, True) && Equal(False, True);
 }
 
 
