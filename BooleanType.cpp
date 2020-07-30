@@ -4,1801 +4,1811 @@ bool Equal(Boolean boolean1, Boolean boolean2);
 Boolean True = "True";
 Boolean False = "False";
 
+
+
+int main()
+{
+    return True == True && False != True;
+}
+
+
 /// PRIVATE!
-template<char C> class to_lower
+
+#include <cstring>
+template<char C> struct to_lower
 {
 };
-template<> class to_lower<'\x00'>
+template<> struct to_lower<'\x00'>
 {
     enum
     {
         value = '\x00'
-    }
+    };
 };
-template<> class to_lower<'\x01'>
+template<> struct to_lower<'\x01'>
 {
     enum
     {
         value = '\x01'
-    }
+    };
 };
-template<> class to_lower<'\x02'>
+template<> struct to_lower<'\x02'>
 {
     enum
     {
         value = '\x02'
-    }
+    };
 };
-template<> class to_lower<'\x03'>
+template<> struct to_lower<'\x03'>
 {
     enum
     {
         value = '\x03'
-    }
+    };
 };
-template<> class to_lower<'\x04'>
+template<> struct to_lower<'\x04'>
 {
     enum
     {
         value = '\x04'
-    }
+    };
 };
-template<> class to_lower<'\x05'>
+template<> struct to_lower<'\x05'>
 {
     enum
     {
         value = '\x05'
-    }
+    };
 };
-template<> class to_lower<'\x06'>
+template<> struct to_lower<'\x06'>
 {
     enum
     {
         value = '\x06'
-    }
+    };
 };
-template<> class to_lower<'\x07'>
+template<> struct to_lower<'\x07'>
 {
     enum
     {
         value = '\x07'
-    }
+    };
 };
-template<> class to_lower<'\x08'>
+template<> struct to_lower<'\x08'>
 {
     enum
     {
         value = '\x08'
-    }
+    };
 };
-template<> class to_lower<'\x09'>
+template<> struct to_lower<'\x09'>
 {
     enum
     {
         value = '\x09'
-    }
+    };
 };
-template<> class to_lower<'\x0a'>
+template<> struct to_lower<'\x0a'>
 {
     enum
     {
         value = '\x0a'
-    }
+    };
 };
-template<> class to_lower<'\x0b'>
+template<> struct to_lower<'\x0b'>
 {
     enum
     {
         value = '\x0b'
-    }
+    };
 };
-template<> class to_lower<'\x0c'>
+template<> struct to_lower<'\x0c'>
 {
     enum
     {
         value = '\x0c'
-    }
+    };
 };
-template<> class to_lower<'\x0d'>
+template<> struct to_lower<'\x0d'>
 {
     enum
     {
         value = '\x0d'
-    }
+    };
 };
-template<> class to_lower<'\x0e'>
+template<> struct to_lower<'\x0e'>
 {
     enum
     {
         value = '\x0e'
-    }
+    };
 };
-template<> class to_lower<'\x0f'>
+template<> struct to_lower<'\x0f'>
 {
     enum
     {
         value = '\x0f'
-    }
+    };
 };
-template<> class to_lower<'\x10'>
+template<> struct to_lower<'\x10'>
 {
     enum
     {
         value = '\x10'
-    }
+    };
 };
-template<> class to_lower<'\x11'>
+template<> struct to_lower<'\x11'>
 {
     enum
     {
         value = '\x11'
-    }
+    };
 };
-template<> class to_lower<'\x12'>
+template<> struct to_lower<'\x12'>
 {
     enum
     {
         value = '\x12'
-    }
+    };
 };
-template<> class to_lower<'\x13'>
+template<> struct to_lower<'\x13'>
 {
     enum
     {
         value = '\x13'
-    }
+    };
 };
-template<> class to_lower<'\x14'>
+template<> struct to_lower<'\x14'>
 {
     enum
     {
         value = '\x14'
-    }
+    };
 };
-template<> class to_lower<'\x15'>
+template<> struct to_lower<'\x15'>
 {
     enum
     {
         value = '\x15'
-    }
+    };
 };
-template<> class to_lower<'\x16'>
+template<> struct to_lower<'\x16'>
 {
     enum
     {
         value = '\x16'
-    }
+    };
 };
-template<> class to_lower<'\x17'>
+template<> struct to_lower<'\x17'>
 {
     enum
     {
         value = '\x17'
-    }
+    };
 };
-template<> class to_lower<'\x18'>
+template<> struct to_lower<'\x18'>
 {
     enum
     {
         value = '\x18'
-    }
+    };
 };
-template<> class to_lower<'\x19'>
+template<> struct to_lower<'\x19'>
 {
     enum
     {
         value = '\x19'
-    }
+    };
 };
-template<> class to_lower<'\x1a'>
+template<> struct to_lower<'\x1a'>
 {
     enum
     {
         value = '\x1a'
-    }
+    };
 };
-template<> class to_lower<'\x1b'>
+template<> struct to_lower<'\x1b'>
 {
     enum
     {
         value = '\x1b'
-    }
+    };
 };
-template<> class to_lower<'\x1c'>
+template<> struct to_lower<'\x1c'>
 {
     enum
     {
         value = '\x1c'
-    }
+    };
 };
-template<> class to_lower<'\x1d'>
+template<> struct to_lower<'\x1d'>
 {
     enum
     {
         value = '\x1d'
-    }
+    };
 };
-template<> class to_lower<'\x1e'>
+template<> struct to_lower<'\x1e'>
 {
     enum
     {
         value = '\x1e'
-    }
+    };
 };
-template<> class to_lower<'\x1f'>
+template<> struct to_lower<'\x1f'>
 {
     enum
     {
         value = '\x1f'
-    }
+    };
 };
-template<> class to_lower<'\x20'>
+template<> struct to_lower<'\x20'>
 {
     enum
     {
         value = '\x20'
-    }
+    };
 };
-template<> class to_lower<'\x21'>
+template<> struct to_lower<'\x21'>
 {
     enum
     {
         value = '\x21'
-    }
+    };
 };
-template<> class to_lower<'\x22'>
+template<> struct to_lower<'\x22'>
 {
     enum
     {
         value = '\x22'
-    }
+    };
 };
-template<> class to_lower<'\x23'>
+template<> struct to_lower<'\x23'>
 {
     enum
     {
         value = '\x23'
-    }
+    };
 };
-template<> class to_lower<'\x24'>
+template<> struct to_lower<'\x24'>
 {
     enum
     {
         value = '\x24'
-    }
+    };
 };
-template<> class to_lower<'\x25'>
+template<> struct to_lower<'\x25'>
 {
     enum
     {
         value = '\x25'
-    }
+    };
 };
-template<> class to_lower<'\x26'>
+template<> struct to_lower<'\x26'>
 {
     enum
     {
         value = '\x26'
-    }
+    };
 };
-template<> class to_lower<'\x27'>
+template<> struct to_lower<'\x27'>
 {
     enum
     {
         value = '\x27'
-    }
+    };
 };
-template<> class to_lower<'\x28'>
+template<> struct to_lower<'\x28'>
 {
     enum
     {
         value = '\x28'
-    }
+    };
 };
-template<> class to_lower<'\x29'>
+template<> struct to_lower<'\x29'>
 {
     enum
     {
         value = '\x29'
-    }
+    };
 };
-template<> class to_lower<'\x2a'>
+template<> struct to_lower<'\x2a'>
 {
     enum
     {
         value = '\x2a'
-    }
+    };
 };
-template<> class to_lower<'\x2b'>
+template<> struct to_lower<'\x2b'>
 {
     enum
     {
         value = '\x2b'
-    }
+    };
 };
-template<> class to_lower<'\x2c'>
+template<> struct to_lower<'\x2c'>
 {
     enum
     {
         value = '\x2c'
-    }
+    };
 };
-template<> class to_lower<'\x2d'>
+template<> struct to_lower<'\x2d'>
 {
     enum
     {
         value = '\x2d'
-    }
+    };
 };
-template<> class to_lower<'\x2e'>
+template<> struct to_lower<'\x2e'>
 {
     enum
     {
         value = '\x2e'
-    }
+    };
 };
-template<> class to_lower<'\x2f'>
+template<> struct to_lower<'\x2f'>
 {
     enum
     {
         value = '\x2f'
-    }
+    };
 };
-template<> class to_lower<'\x30'>
+template<> struct to_lower<'\x30'>
 {
     enum
     {
         value = '\x30'
-    }
+    };
 };
-template<> class to_lower<'\x31'>
+template<> struct to_lower<'\x31'>
 {
     enum
     {
         value = '\x31'
-    }
+    };
 };
-template<> class to_lower<'\x32'>
+template<> struct to_lower<'\x32'>
 {
     enum
     {
         value = '\x32'
-    }
+    };
 };
-template<> class to_lower<'\x33'>
+template<> struct to_lower<'\x33'>
 {
     enum
     {
         value = '\x33'
-    }
+    };
 };
-template<> class to_lower<'\x34'>
+template<> struct to_lower<'\x34'>
 {
     enum
     {
         value = '\x34'
-    }
+    };
 };
-template<> class to_lower<'\x35'>
+template<> struct to_lower<'\x35'>
 {
     enum
     {
         value = '\x35'
-    }
+    };
 };
-template<> class to_lower<'\x36'>
+template<> struct to_lower<'\x36'>
 {
     enum
     {
         value = '\x36'
-    }
+    };
 };
-template<> class to_lower<'\x37'>
+template<> struct to_lower<'\x37'>
 {
     enum
     {
         value = '\x37'
-    }
+    };
 };
-template<> class to_lower<'\x38'>
+template<> struct to_lower<'\x38'>
 {
     enum
     {
         value = '\x38'
-    }
+    };
 };
-template<> class to_lower<'\x39'>
+template<> struct to_lower<'\x39'>
 {
     enum
     {
         value = '\x39'
-    }
+    };
 };
-template<> class to_lower<'\x3a'>
+template<> struct to_lower<'\x3a'>
 {
     enum
     {
         value = '\x3a'
-    }
+    };
 };
-template<> class to_lower<'\x3b'>
+template<> struct to_lower<'\x3b'>
 {
     enum
     {
         value = '\x3b'
-    }
+    };
 };
-template<> class to_lower<'\x3c'>
+template<> struct to_lower<'\x3c'>
 {
     enum
     {
         value = '\x3c'
-    }
+    };
 };
-template<> class to_lower<'\x3d'>
+template<> struct to_lower<'\x3d'>
 {
     enum
     {
         value = '\x3d'
-    }
+    };
 };
-template<> class to_lower<'\x3e'>
+template<> struct to_lower<'\x3e'>
 {
     enum
     {
         value = '\x3e'
-    }
+    };
 };
-template<> class to_lower<'\x3f'>
+template<> struct to_lower<'\x3f'>
 {
     enum
     {
         value = '\x3f'
-    }
+    };
 };
-template<> class to_lower<'\x40'>
+template<> struct to_lower<'\x40'>
 {
     enum
     {
         value = '\x40'
-    }
+    };
 };
-template<> class to_lower<'\x41'>
+template<> struct to_lower<'\x41'>
 {
     enum
     {
         value = '\x61'
-    }
+    };
 };
-template<> class to_lower<'\x42'>
+template<> struct to_lower<'\x42'>
 {
     enum
     {
         value = '\x62'
-    }
+    };
 };
-template<> class to_lower<'\x43'>
+template<> struct to_lower<'\x43'>
 {
     enum
     {
         value = '\x63'
-    }
+    };
 };
-template<> class to_lower<'\x44'>
+template<> struct to_lower<'\x44'>
 {
     enum
     {
         value = '\x64'
-    }
+    };
 };
-template<> class to_lower<'\x45'>
+template<> struct to_lower<'\x45'>
 {
     enum
     {
         value = '\x65'
-    }
+    };
 };
-template<> class to_lower<'\x46'>
+template<> struct to_lower<'\x46'>
 {
     enum
     {
         value = '\x66'
-    }
+    };
 };
-template<> class to_lower<'\x47'>
+template<> struct to_lower<'\x47'>
 {
     enum
     {
         value = '\x67'
-    }
+    };
 };
-template<> class to_lower<'\x48'>
+template<> struct to_lower<'\x48'>
 {
     enum
     {
         value = '\x68'
-    }
+    };
 };
-template<> class to_lower<'\x49'>
+template<> struct to_lower<'\x49'>
 {
     enum
     {
         value = '\x69'
-    }
+    };
 };
-template<> class to_lower<'\x4a'>
+template<> struct to_lower<'\x4a'>
 {
     enum
     {
         value = '\x6a'
-    }
+    };
 };
-template<> class to_lower<'\x4b'>
+template<> struct to_lower<'\x4b'>
 {
     enum
     {
         value = '\x6b'
-    }
+    };
 };
-template<> class to_lower<'\x4c'>
+template<> struct to_lower<'\x4c'>
 {
     enum
     {
         value = '\x6c'
-    }
+    };
 };
-template<> class to_lower<'\x4d'>
+template<> struct to_lower<'\x4d'>
 {
     enum
     {
         value = '\x6d'
-    }
+    };
 };
-template<> class to_lower<'\x4e'>
+template<> struct to_lower<'\x4e'>
 {
     enum
     {
         value = '\x6e'
-    }
+    };
 };
-template<> class to_lower<'\x4f'>
+template<> struct to_lower<'\x4f'>
 {
     enum
     {
         value = '\x6f'
-    }
+    };
 };
-template<> class to_lower<'\x50'>
+template<> struct to_lower<'\x50'>
 {
     enum
     {
         value = '\x70'
-    }
+    };
 };
-template<> class to_lower<'\x51'>
+template<> struct to_lower<'\x51'>
 {
     enum
     {
         value = '\x71'
-    }
+    };
 };
-template<> class to_lower<'\x52'>
+template<> struct to_lower<'\x52'>
 {
     enum
     {
         value = '\x72'
-    }
+    };
 };
-template<> class to_lower<'\x53'>
+template<> struct to_lower<'\x53'>
 {
     enum
     {
         value = '\x73'
-    }
+    };
 };
-template<> class to_lower<'\x54'>
+template<> struct to_lower<'\x54'>
 {
     enum
     {
         value = '\x74'
-    }
+    };
 };
-template<> class to_lower<'\x55'>
+template<> struct to_lower<'\x55'>
 {
     enum
     {
         value = '\x75'
-    }
+    };
 };
-template<> class to_lower<'\x56'>
+template<> struct to_lower<'\x56'>
 {
     enum
     {
         value = '\x76'
-    }
+    };
 };
-template<> class to_lower<'\x57'>
+template<> struct to_lower<'\x57'>
 {
     enum
     {
         value = '\x77'
-    }
+    };
 };
-template<> class to_lower<'\x58'>
+template<> struct to_lower<'\x58'>
 {
     enum
     {
         value = '\x78'
-    }
+    };
 };
-template<> class to_lower<'\x59'>
+template<> struct to_lower<'\x59'>
 {
     enum
     {
         value = '\x79'
-    }
+    };
 };
-template<> class to_lower<'\x5a'>
+template<> struct to_lower<'\x5a'>
 {
     enum
     {
         value = '\x7a'
-    }
+    };
 };
-template<> class to_lower<'\x5b'>
+template<> struct to_lower<'\x5b'>
 {
     enum
     {
         value = '\x5b'
-    }
+    };
 };
-template<> class to_lower<'\x5c'>
+template<> struct to_lower<'\x5c'>
 {
     enum
     {
         value = '\x5c'
-    }
+    };
 };
-template<> class to_lower<'\x5d'>
+template<> struct to_lower<'\x5d'>
 {
     enum
     {
         value = '\x5d'
-    }
+    };
 };
-template<> class to_lower<'\x5e'>
+template<> struct to_lower<'\x5e'>
 {
     enum
     {
         value = '\x5e'
-    }
+    };
 };
-template<> class to_lower<'\x5f'>
+template<> struct to_lower<'\x5f'>
 {
     enum
     {
         value = '\x5f'
-    }
+    };
 };
-template<> class to_lower<'\x60'>
+template<> struct to_lower<'\x60'>
 {
     enum
     {
         value = '\x60'
-    }
+    };
 };
-template<> class to_lower<'\x61'>
+template<> struct to_lower<'\x61'>
 {
     enum
     {
         value = '\x61'
-    }
+    };
 };
-template<> class to_lower<'\x62'>
+template<> struct to_lower<'\x62'>
 {
     enum
     {
         value = '\x62'
-    }
+    };
 };
-template<> class to_lower<'\x63'>
+template<> struct to_lower<'\x63'>
 {
     enum
     {
         value = '\x63'
-    }
+    };
 };
-template<> class to_lower<'\x64'>
+template<> struct to_lower<'\x64'>
 {
     enum
     {
         value = '\x64'
-    }
+    };
 };
-template<> class to_lower<'\x65'>
+template<> struct to_lower<'\x65'>
 {
     enum
     {
         value = '\x65'
-    }
+    };
 };
-template<> class to_lower<'\x66'>
+template<> struct to_lower<'\x66'>
 {
     enum
     {
         value = '\x66'
-    }
+    };
 };
-template<> class to_lower<'\x67'>
+template<> struct to_lower<'\x67'>
 {
     enum
     {
         value = '\x67'
-    }
+    };
 };
-template<> class to_lower<'\x68'>
+template<> struct to_lower<'\x68'>
 {
     enum
     {
         value = '\x68'
-    }
+    };
 };
-template<> class to_lower<'\x69'>
+template<> struct to_lower<'\x69'>
 {
     enum
     {
         value = '\x69'
-    }
+    };
 };
-template<> class to_lower<'\x6a'>
+template<> struct to_lower<'\x6a'>
 {
     enum
     {
         value = '\x6a'
-    }
+    };
 };
-template<> class to_lower<'\x6b'>
+template<> struct to_lower<'\x6b'>
 {
     enum
     {
         value = '\x6b'
-    }
+    };
 };
-template<> class to_lower<'\x6c'>
+template<> struct to_lower<'\x6c'>
 {
     enum
     {
         value = '\x6c'
-    }
+    };
 };
-template<> class to_lower<'\x6d'>
+template<> struct to_lower<'\x6d'>
 {
     enum
     {
         value = '\x6d'
-    }
+    };
 };
-template<> class to_lower<'\x6e'>
+template<> struct to_lower<'\x6e'>
 {
     enum
     {
         value = '\x6e'
-    }
+    };
 };
-template<> class to_lower<'\x6f'>
+template<> struct to_lower<'\x6f'>
 {
     enum
     {
         value = '\x6f'
-    }
+    };
 };
-template<> class to_lower<'\x70'>
+template<> struct to_lower<'\x70'>
 {
     enum
     {
         value = '\x70'
-    }
+    };
 };
-template<> class to_lower<'\x71'>
+template<> struct to_lower<'\x71'>
 {
     enum
     {
         value = '\x71'
-    }
+    };
 };
-template<> class to_lower<'\x72'>
+template<> struct to_lower<'\x72'>
 {
     enum
     {
         value = '\x72'
-    }
+    };
 };
-template<> class to_lower<'\x73'>
+template<> struct to_lower<'\x73'>
 {
     enum
     {
         value = '\x73'
-    }
+    };
 };
-template<> class to_lower<'\x74'>
+template<> struct to_lower<'\x74'>
 {
     enum
     {
         value = '\x74'
-    }
+    };
 };
-template<> class to_lower<'\x75'>
+template<> struct to_lower<'\x75'>
 {
     enum
     {
         value = '\x75'
-    }
+    };
 };
-template<> class to_lower<'\x76'>
+template<> struct to_lower<'\x76'>
 {
     enum
     {
         value = '\x76'
-    }
+    };
 };
-template<> class to_lower<'\x77'>
+template<> struct to_lower<'\x77'>
 {
     enum
     {
         value = '\x77'
-    }
+    };
 };
-template<> class to_lower<'\x78'>
+template<> struct to_lower<'\x78'>
 {
     enum
     {
         value = '\x78'
-    }
+    };
 };
-template<> class to_lower<'\x79'>
+template<> struct to_lower<'\x79'>
 {
     enum
     {
         value = '\x79'
-    }
+    };
 };
-template<> class to_lower<'\x7a'>
+template<> struct to_lower<'\x7a'>
 {
     enum
     {
         value = '\x7a'
-    }
+    };
 };
-template<> class to_lower<'\x7b'>
+template<> struct to_lower<'\x7b'>
 {
     enum
     {
         value = '\x7b'
-    }
+    };
 };
-template<> class to_lower<'\x7c'>
+template<> struct to_lower<'\x7c'>
 {
     enum
     {
         value = '\x7c'
-    }
+    };
 };
-template<> class to_lower<'\x7d'>
+template<> struct to_lower<'\x7d'>
 {
     enum
     {
         value = '\x7d'
-    }
+    };
 };
-template<> class to_lower<'\x7e'>
+template<> struct to_lower<'\x7e'>
 {
     enum
     {
         value = '\x7e'
-    }
+    };
 };
-template<> class to_lower<'\x7f'>
+template<> struct to_lower<'\x7f'>
 {
     enum
     {
         value = '\x7f'
-    }
+    };
 };
-template<> class to_lower<'\x80'>
+template<> struct to_lower<'\x80'>
 {
     enum
     {
         value = '\x80'
-    }
+    };
 };
-template<> class to_lower<'\x81'>
+template<> struct to_lower<'\x81'>
 {
     enum
     {
         value = '\x81'
-    }
+    };
 };
-template<> class to_lower<'\x82'>
+template<> struct to_lower<'\x82'>
 {
     enum
     {
         value = '\x82'
-    }
+    };
 };
-template<> class to_lower<'\x83'>
+template<> struct to_lower<'\x83'>
 {
     enum
     {
         value = '\x83'
-    }
+    };
 };
-template<> class to_lower<'\x84'>
+template<> struct to_lower<'\x84'>
 {
     enum
     {
         value = '\x84'
-    }
+    };
 };
-template<> class to_lower<'\x85'>
+template<> struct to_lower<'\x85'>
 {
     enum
     {
         value = '\x85'
-    }
+    };
 };
-template<> class to_lower<'\x86'>
+template<> struct to_lower<'\x86'>
 {
     enum
     {
         value = '\x86'
-    }
+    };
 };
-template<> class to_lower<'\x87'>
+template<> struct to_lower<'\x87'>
 {
     enum
     {
         value = '\x87'
-    }
+    };
 };
-template<> class to_lower<'\x88'>
+template<> struct to_lower<'\x88'>
 {
     enum
     {
         value = '\x88'
-    }
+    };
 };
-template<> class to_lower<'\x89'>
+template<> struct to_lower<'\x89'>
 {
     enum
     {
         value = '\x89'
-    }
+    };
 };
-template<> class to_lower<'\x8a'>
+template<> struct to_lower<'\x8a'>
 {
     enum
     {
         value = '\x8a'
-    }
+    };
 };
-template<> class to_lower<'\x8b'>
+template<> struct to_lower<'\x8b'>
 {
     enum
     {
         value = '\x8b'
-    }
+    };
 };
-template<> class to_lower<'\x8c'>
+template<> struct to_lower<'\x8c'>
 {
     enum
     {
         value = '\x8c'
-    }
+    };
 };
-template<> class to_lower<'\x8d'>
+template<> struct to_lower<'\x8d'>
 {
     enum
     {
         value = '\x8d'
-    }
+    };
 };
-template<> class to_lower<'\x8e'>
+template<> struct to_lower<'\x8e'>
 {
     enum
     {
         value = '\x8e'
-    }
+    };
 };
-template<> class to_lower<'\x8f'>
+template<> struct to_lower<'\x8f'>
 {
     enum
     {
         value = '\x8f'
-    }
+    };
 };
-template<> class to_lower<'\x90'>
+template<> struct to_lower<'\x90'>
 {
     enum
     {
         value = '\x90'
-    }
+    };
 };
-template<> class to_lower<'\x91'>
+template<> struct to_lower<'\x91'>
 {
     enum
     {
         value = '\x91'
-    }
+    };
 };
-template<> class to_lower<'\x92'>
+template<> struct to_lower<'\x92'>
 {
     enum
     {
         value = '\x92'
-    }
+    };
 };
-template<> class to_lower<'\x93'>
+template<> struct to_lower<'\x93'>
 {
     enum
     {
         value = '\x93'
-    }
+    };
 };
-template<> class to_lower<'\x94'>
+template<> struct to_lower<'\x94'>
 {
     enum
     {
         value = '\x94'
-    }
+    };
 };
-template<> class to_lower<'\x95'>
+template<> struct to_lower<'\x95'>
 {
     enum
     {
         value = '\x95'
-    }
+    };
 };
-template<> class to_lower<'\x96'>
+template<> struct to_lower<'\x96'>
 {
     enum
     {
         value = '\x96'
-    }
+    };
 };
-template<> class to_lower<'\x97'>
+template<> struct to_lower<'\x97'>
 {
     enum
     {
         value = '\x97'
-    }
+    };
 };
-template<> class to_lower<'\x98'>
+template<> struct to_lower<'\x98'>
 {
     enum
     {
         value = '\x98'
-    }
+    };
 };
-template<> class to_lower<'\x99'>
+template<> struct to_lower<'\x99'>
 {
     enum
     {
         value = '\x99'
-    }
+    };
 };
-template<> class to_lower<'\x9a'>
+template<> struct to_lower<'\x9a'>
 {
     enum
     {
         value = '\x9a'
-    }
+    };
 };
-template<> class to_lower<'\x9b'>
+template<> struct to_lower<'\x9b'>
 {
     enum
     {
         value = '\x9b'
-    }
+    };
 };
-template<> class to_lower<'\x9c'>
+template<> struct to_lower<'\x9c'>
 {
     enum
     {
         value = '\x9c'
-    }
+    };
 };
-template<> class to_lower<'\x9d'>
+template<> struct to_lower<'\x9d'>
 {
     enum
     {
         value = '\x9d'
-    }
+    };
 };
-template<> class to_lower<'\x9e'>
+template<> struct to_lower<'\x9e'>
 {
     enum
     {
         value = '\x9e'
-    }
+    };
 };
-template<> class to_lower<'\x9f'>
+template<> struct to_lower<'\x9f'>
 {
     enum
     {
         value = '\x9f'
-    }
+    };
 };
-template<> class to_lower<'\xa0'>
+template<> struct to_lower<'\xa0'>
 {
     enum
     {
         value = '\xa0'
-    }
+    };
 };
-template<> class to_lower<'\xa1'>
+template<> struct to_lower<'\xa1'>
 {
     enum
     {
         value = '\xa1'
-    }
+    };
 };
-template<> class to_lower<'\xa2'>
+template<> struct to_lower<'\xa2'>
 {
     enum
     {
         value = '\xa2'
-    }
+    };
 };
-template<> class to_lower<'\xa3'>
+template<> struct to_lower<'\xa3'>
 {
     enum
     {
         value = '\xa3'
-    }
+    };
 };
-template<> class to_lower<'\xa4'>
+template<> struct to_lower<'\xa4'>
 {
     enum
     {
         value = '\xa4'
-    }
+    };
 };
-template<> class to_lower<'\xa5'>
+template<> struct to_lower<'\xa5'>
 {
     enum
     {
         value = '\xa5'
-    }
+    };
 };
-template<> class to_lower<'\xa6'>
+template<> struct to_lower<'\xa6'>
 {
     enum
     {
         value = '\xa6'
-    }
+    };
 };
-template<> class to_lower<'\xa7'>
+template<> struct to_lower<'\xa7'>
 {
     enum
     {
         value = '\xa7'
-    }
+    };
 };
-template<> class to_lower<'\xa8'>
+template<> struct to_lower<'\xa8'>
 {
     enum
     {
         value = '\xa8'
-    }
+    };
 };
-template<> class to_lower<'\xa9'>
+template<> struct to_lower<'\xa9'>
 {
     enum
     {
         value = '\xa9'
-    }
+    };
 };
-template<> class to_lower<'\xaa'>
+template<> struct to_lower<'\xaa'>
 {
     enum
     {
         value = '\xaa'
-    }
+    };
 };
-template<> class to_lower<'\xab'>
+template<> struct to_lower<'\xab'>
 {
     enum
     {
         value = '\xab'
-    }
+    };
 };
-template<> class to_lower<'\xac'>
+template<> struct to_lower<'\xac'>
 {
     enum
     {
         value = '\xac'
-    }
+    };
 };
-template<> class to_lower<'\xad'>
+template<> struct to_lower<'\xad'>
 {
     enum
     {
         value = '\xad'
-    }
+    };
 };
-template<> class to_lower<'\xae'>
+template<> struct to_lower<'\xae'>
 {
     enum
     {
         value = '\xae'
-    }
+    };
 };
-template<> class to_lower<'\xaf'>
+template<> struct to_lower<'\xaf'>
 {
     enum
     {
         value = '\xaf'
-    }
+    };
 };
-template<> class to_lower<'\xb0'>
+template<> struct to_lower<'\xb0'>
 {
     enum
     {
         value = '\xb0'
-    }
+    };
 };
-template<> class to_lower<'\xb1'>
+template<> struct to_lower<'\xb1'>
 {
     enum
     {
         value = '\xb1'
-    }
+    };
 };
-template<> class to_lower<'\xb2'>
+template<> struct to_lower<'\xb2'>
 {
     enum
     {
         value = '\xb2'
-    }
+    };
 };
-template<> class to_lower<'\xb3'>
+template<> struct to_lower<'\xb3'>
 {
     enum
     {
         value = '\xb3'
-    }
+    };
 };
-template<> class to_lower<'\xb4'>
+template<> struct to_lower<'\xb4'>
 {
     enum
     {
         value = '\xb4'
-    }
+    };
 };
-template<> class to_lower<'\xb5'>
+template<> struct to_lower<'\xb5'>
 {
     enum
     {
         value = '\xb5'
-    }
+    };
 };
-template<> class to_lower<'\xb6'>
+template<> struct to_lower<'\xb6'>
 {
     enum
     {
         value = '\xb6'
-    }
+    };
 };
-template<> class to_lower<'\xb7'>
+template<> struct to_lower<'\xb7'>
 {
     enum
     {
         value = '\xb7'
-    }
+    };
 };
-template<> class to_lower<'\xb8'>
+template<> struct to_lower<'\xb8'>
 {
     enum
     {
         value = '\xb8'
-    }
+    };
 };
-template<> class to_lower<'\xb9'>
+template<> struct to_lower<'\xb9'>
 {
     enum
     {
         value = '\xb9'
-    }
+    };
 };
-template<> class to_lower<'\xba'>
+template<> struct to_lower<'\xba'>
 {
     enum
     {
         value = '\xba'
-    }
+    };
 };
-template<> class to_lower<'\xbb'>
+template<> struct to_lower<'\xbb'>
 {
     enum
     {
         value = '\xbb'
-    }
+    };
 };
-template<> class to_lower<'\xbc'>
+template<> struct to_lower<'\xbc'>
 {
     enum
     {
         value = '\xbc'
-    }
+    };
 };
-template<> class to_lower<'\xbd'>
+template<> struct to_lower<'\xbd'>
 {
     enum
     {
         value = '\xbd'
-    }
+    };
 };
-template<> class to_lower<'\xbe'>
+template<> struct to_lower<'\xbe'>
 {
     enum
     {
         value = '\xbe'
-    }
+    };
 };
-template<> class to_lower<'\xbf'>
+template<> struct to_lower<'\xbf'>
 {
     enum
     {
         value = '\xbf'
-    }
+    };
 };
-template<> class to_lower<'\xc0'>
+template<> struct to_lower<'\xc0'>
 {
     enum
     {
         value = '\xc0'
-    }
+    };
 };
-template<> class to_lower<'\xc1'>
+template<> struct to_lower<'\xc1'>
 {
     enum
     {
         value = '\xc1'
-    }
+    };
 };
-template<> class to_lower<'\xc2'>
+template<> struct to_lower<'\xc2'>
 {
     enum
     {
         value = '\xc2'
-    }
+    };
 };
-template<> class to_lower<'\xc3'>
+template<> struct to_lower<'\xc3'>
 {
     enum
     {
         value = '\xc3'
-    }
+    };
 };
-template<> class to_lower<'\xc4'>
+template<> struct to_lower<'\xc4'>
 {
     enum
     {
         value = '\xc4'
-    }
+    };
 };
-template<> class to_lower<'\xc5'>
+template<> struct to_lower<'\xc5'>
 {
     enum
     {
         value = '\xc5'
-    }
+    };
 };
-template<> class to_lower<'\xc6'>
+template<> struct to_lower<'\xc6'>
 {
     enum
     {
         value = '\xc6'
-    }
+    };
 };
-template<> class to_lower<'\xc7'>
+template<> struct to_lower<'\xc7'>
 {
     enum
     {
         value = '\xc7'
-    }
+    };
 };
-template<> class to_lower<'\xc8'>
+template<> struct to_lower<'\xc8'>
 {
     enum
     {
         value = '\xc8'
-    }
+    };
 };
-template<> class to_lower<'\xc9'>
+template<> struct to_lower<'\xc9'>
 {
     enum
     {
         value = '\xc9'
-    }
+    };
 };
-template<> class to_lower<'\xca'>
+template<> struct to_lower<'\xca'>
 {
     enum
     {
         value = '\xca'
-    }
+    };
 };
-template<> class to_lower<'\xcb'>
+template<> struct to_lower<'\xcb'>
 {
     enum
     {
         value = '\xcb'
-    }
+    };
 };
-template<> class to_lower<'\xcc'>
+template<> struct to_lower<'\xcc'>
 {
     enum
     {
         value = '\xcc'
-    }
+    };
 };
-template<> class to_lower<'\xcd'>
+template<> struct to_lower<'\xcd'>
 {
     enum
     {
         value = '\xcd'
-    }
+    };
 };
-template<> class to_lower<'\xce'>
+template<> struct to_lower<'\xce'>
 {
     enum
     {
         value = '\xce'
-    }
+    };
 };
-template<> class to_lower<'\xcf'>
+template<> struct to_lower<'\xcf'>
 {
     enum
     {
         value = '\xcf'
-    }
+    };
 };
-template<> class to_lower<'\xd0'>
+template<> struct to_lower<'\xd0'>
 {
     enum
     {
         value = '\xd0'
-    }
+    };
 };
-template<> class to_lower<'\xd1'>
+template<> struct to_lower<'\xd1'>
 {
     enum
     {
         value = '\xd1'
-    }
+    };
 };
-template<> class to_lower<'\xd2'>
+template<> struct to_lower<'\xd2'>
 {
     enum
     {
         value = '\xd2'
-    }
+    };
 };
-template<> class to_lower<'\xd3'>
+template<> struct to_lower<'\xd3'>
 {
     enum
     {
         value = '\xd3'
-    }
+    };
 };
-template<> class to_lower<'\xd4'>
+template<> struct to_lower<'\xd4'>
 {
     enum
     {
         value = '\xd4'
-    }
+    };
 };
-template<> class to_lower<'\xd5'>
+template<> struct to_lower<'\xd5'>
 {
     enum
     {
         value = '\xd5'
-    }
+    };
 };
-template<> class to_lower<'\xd6'>
+template<> struct to_lower<'\xd6'>
 {
     enum
     {
         value = '\xd6'
-    }
+    };
 };
-template<> class to_lower<'\xd7'>
+template<> struct to_lower<'\xd7'>
 {
     enum
     {
         value = '\xd7'
-    }
+    };
 };
-template<> class to_lower<'\xd8'>
+template<> struct to_lower<'\xd8'>
 {
     enum
     {
         value = '\xd8'
-    }
+    };
 };
-template<> class to_lower<'\xd9'>
+template<> struct to_lower<'\xd9'>
 {
     enum
     {
         value = '\xd9'
-    }
+    };
 };
-template<> class to_lower<'\xda'>
+template<> struct to_lower<'\xda'>
 {
     enum
     {
         value = '\xda'
-    }
+    };
 };
-template<> class to_lower<'\xdb'>
+template<> struct to_lower<'\xdb'>
 {
     enum
     {
         value = '\xdb'
-    }
+    };
 };
-template<> class to_lower<'\xdc'>
+template<> struct to_lower<'\xdc'>
 {
     enum
     {
         value = '\xdc'
-    }
+    };
 };
-template<> class to_lower<'\xdd'>
+template<> struct to_lower<'\xdd'>
 {
     enum
     {
         value = '\xdd'
-    }
+    };
 };
-template<> class to_lower<'\xde'>
+template<> struct to_lower<'\xde'>
 {
     enum
     {
         value = '\xde'
-    }
+    };
 };
-template<> class to_lower<'\xdf'>
+template<> struct to_lower<'\xdf'>
 {
     enum
     {
         value = '\xdf'
-    }
+    };
 };
-template<> class to_lower<'\xe0'>
+template<> struct to_lower<'\xe0'>
 {
     enum
     {
         value = '\xe0'
-    }
+    };
 };
-template<> class to_lower<'\xe1'>
+template<> struct to_lower<'\xe1'>
 {
     enum
     {
         value = '\xe1'
-    }
+    };
 };
-template<> class to_lower<'\xe2'>
+template<> struct to_lower<'\xe2'>
 {
     enum
     {
         value = '\xe2'
-    }
+    };
 };
-template<> class to_lower<'\xe3'>
+template<> struct to_lower<'\xe3'>
 {
     enum
     {
         value = '\xe3'
-    }
+    };
 };
-template<> class to_lower<'\xe4'>
+template<> struct to_lower<'\xe4'>
 {
     enum
     {
         value = '\xe4'
-    }
+    };
 };
-template<> class to_lower<'\xe5'>
+template<> struct to_lower<'\xe5'>
 {
     enum
     {
         value = '\xe5'
-    }
+    };
 };
-template<> class to_lower<'\xe6'>
+template<> struct to_lower<'\xe6'>
 {
     enum
     {
         value = '\xe6'
-    }
+    };
 };
-template<> class to_lower<'\xe7'>
+template<> struct to_lower<'\xe7'>
 {
     enum
     {
         value = '\xe7'
-    }
+    };
 };
-template<> class to_lower<'\xe8'>
+template<> struct to_lower<'\xe8'>
 {
     enum
     {
         value = '\xe8'
-    }
+    };
 };
-template<> class to_lower<'\xe9'>
+template<> struct to_lower<'\xe9'>
 {
     enum
     {
         value = '\xe9'
-    }
+    };
 };
-template<> class to_lower<'\xea'>
+template<> struct to_lower<'\xea'>
 {
     enum
     {
         value = '\xea'
-    }
+    };
 };
-template<> class to_lower<'\xeb'>
+template<> struct to_lower<'\xeb'>
 {
     enum
     {
         value = '\xeb'
-    }
+    };
 };
-template<> class to_lower<'\xec'>
+template<> struct to_lower<'\xec'>
 {
     enum
     {
         value = '\xec'
-    }
+    };
 };
-template<> class to_lower<'\xed'>
+template<> struct to_lower<'\xed'>
 {
     enum
     {
         value = '\xed'
-    }
+    };
 };
-template<> class to_lower<'\xee'>
+template<> struct to_lower<'\xee'>
 {
     enum
     {
         value = '\xee'
-    }
+    };
 };
-template<> class to_lower<'\xef'>
+template<> struct to_lower<'\xef'>
 {
     enum
     {
         value = '\xef'
-    }
+    };
 };
-template<> class to_lower<'\xf0'>
+template<> struct to_lower<'\xf0'>
 {
     enum
     {
         value = '\xf0'
-    }
+    };
 };
-template<> class to_lower<'\xf1'>
+template<> struct to_lower<'\xf1'>
 {
     enum
     {
         value = '\xf1'
-    }
+    };
 };
-template<> class to_lower<'\xf2'>
+template<> struct to_lower<'\xf2'>
 {
     enum
     {
         value = '\xf2'
-    }
+    };
 };
-template<> class to_lower<'\xf3'>
+template<> struct to_lower<'\xf3'>
 {
     enum
     {
         value = '\xf3'
-    }
+    };
 };
-template<> class to_lower<'\xf4'>
+template<> struct to_lower<'\xf4'>
 {
     enum
     {
         value = '\xf4'
-    }
+    };
 };
-template<> class to_lower<'\xf5'>
+template<> struct to_lower<'\xf5'>
 {
     enum
     {
         value = '\xf5'
-    }
+    };
 };
-template<> class to_lower<'\xf6'>
+template<> struct to_lower<'\xf6'>
 {
     enum
     {
         value = '\xf6'
-    }
+    };
 };
-template<> class to_lower<'\xf7'>
+template<> struct to_lower<'\xf7'>
 {
     enum
     {
         value = '\xf7'
-    }
+    };
 };
-template<> class to_lower<'\xf8'>
+template<> struct to_lower<'\xf8'>
 {
     enum
     {
         value = '\xf8'
-    }
+    };
 };
-template<> class to_lower<'\xf9'>
+template<> struct to_lower<'\xf9'>
 {
     enum
     {
         value = '\xf9'
-    }
+    };
 };
-template<> class to_lower<'\xfa'>
+template<> struct to_lower<'\xfa'>
 {
     enum
     {
         value = '\xfa'
-    }
+    };
 };
-template<> class to_lower<'\xfb'>
+template<> struct to_lower<'\xfb'>
 {
     enum
     {
         value = '\xfb'
-    }
+    };
 };
-template<> class to_lower<'\xfc'>
+template<> struct to_lower<'\xfc'>
 {
     enum
     {
         value = '\xfc'
-    }
+    };
 };
-template<> class to_lower<'\xfd'>
+template<> struct to_lower<'\xfd'>
 {
     enum
     {
         value = '\xfd'
-    }
+    };
 };
-template<> class to_lower<'\xfe'>
+template<> struct to_lower<'\xfe'>
 {
     enum
     {
         value = '\xfe'
-    }
+    };
 };
-template<> class to_lower<'\xff'>
+template<> struct to_lower<'\xff'>
 {
     enum
     {
         value = '\xff'
-    }
+    };
 };
 char ToLower(char const C)
 {
@@ -2321,51 +2331,51 @@ char ToLower(char const C)
     }
 }
 
-template<int Len> class to_lower_str
+template<int Len> struct to_lower_str
 {
-    void operator()(char * const str)
+    void operator()(Boolean str)
     {
         *str = ToLower(*str);
-        to_lower_str<Len-1>(str+1);
+        to_lower_str<Len-1>()(str+1);
     }
 };
-template<> class to_lower_str<0>
+template<> struct to_lower_str<0>
 {
-    void operator()(char * const)
+    void operator()(Boolean)
     {
     }
 };
-void ToLower(char * const str)
+void ToLower(Boolean str)
 {
     switch(strlen(str))
     {
     case 0:
-        to_lower_str<0>(str);
+        to_lower_str<0>()(str);
     case 1:
-        to_lower_str<1>(str);
+        to_lower_str<1>()(str);
     case 2:
-        to_lower_str<2>(str);
+        to_lower_str<2>()(str);
     case 3:
-        to_lower_str<3>(str);
+        to_lower_str<3>()(str);
     case 4:
-        to_lower_str<4>(str);
+        to_lower_str<4>()(str);
     case 5:
-        to_lower_str<5>(str);
+        to_lower_str<5>()(str);
     case 6:
-        to_lower_str<6>(str);
+        to_lower_str<6>()(str);
     case 7:
-        to_lower_str<7>(str);
+        to_lower_str<7>()(str);
     case 8:
-        to_lower_str<8>(str);
+        to_lower_str<8>()(str);
     case 9:
-        to_lower_str<9>(str);
+        to_lower_str<9>()(str);
     case 10:
-        to_lower_str<10>(str);
+        to_lower_str<10>()(str);
     }
 }
-template<int Len> class str_i_cmp
+template<int Len> struct str_i_cmp
 {
-    int operator()(char * const str1, char * const str2)
+    int operator()(Boolean str1, Boolean str2)
     {
         char const s1 = ToLower(*str1);
         char const s2 = ToLower(*str2);
@@ -2375,29 +2385,29 @@ template<int Len> class str_i_cmp
         else if(str1 < str2)
             return -1;
 
-        return str_i_cmp<Len-1>(str1+1,str2+1);
+        return str_i_cmp<Len-1>()(str1+1,str2+1);
     }
 };
-template<> class str_i_cmp<0>
+template<> struct str_i_cmp<0>
 {
-    int operator()(char * const str1, char * const str2)
+    int operator()(Boolean str1, Boolean str2)
     {
         return 0;
     }
 };
-template<int Len1, int Len2> class str_i_cmp_2
+template<int Len1, int Len2> struct str_i_cmp_2
 {
-    int operator()(char * const str1, char * const str2)
+    int operator()(Boolean str1, Boolean str2)
     {
         return 0;
     }
 };
 
-template<int Len1> class str_i_cmp_2<Len1, Len1>
+template<int Len1> struct str_i_cmp_2<Len1, Len1>
 {
-    int operator()(char * const str1, char * const str2)
+    int operator()(Boolean str1, Boolean str2)
     {
-        return str_i_cmp(str1, str2);
+        return str_i_cmp<Len1>()(str1, str2);
     }
 };
 bool Equal(Boolean boolean1, Boolean boolean2)
@@ -2411,27 +2421,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<0, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<0, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<0, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<0, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<0, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<0, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<0, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<0, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<0, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<0, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<0, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<0, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2439,27 +2449,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<1, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<1, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<1, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<1, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<1, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<1, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<1, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<1, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<1, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<1, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<1, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<1, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2467,27 +2477,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<2, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<2, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<2, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<2, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<2, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<2, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<2, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<2, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<2, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<2, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<2, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<2, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2495,27 +2505,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<3, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<3, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<3, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<3, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<3, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<3, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<3, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<3, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<3, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<3, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<3, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<3, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2523,27 +2533,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<4, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<4, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<4, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<4, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<4, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<4, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<4, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<4, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<4, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<4, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<4, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<4, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2551,27 +2561,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<5, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<5, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<5, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<5, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<5, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<5, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<5, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<5, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<5, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<5, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<5, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<5, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2579,27 +2589,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<6, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<6, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<6, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<6, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<6, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<6, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<6, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<6, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<6, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<6, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<6, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<6, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2607,27 +2617,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<7, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<7, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<7, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<7, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<7, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<7, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<7, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<7, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<7, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<7, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<7, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<7, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2635,27 +2645,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<8, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<8, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<8, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<8, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<8, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<8, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<8, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<8, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<8, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<8, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<8, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<8, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2663,27 +2673,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<9, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<9, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<9, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<9, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<9, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<9, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<9, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<9, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<9, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<9, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<9, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<9, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
@@ -2691,27 +2701,27 @@ bool Equal(Boolean boolean1, Boolean boolean2)
         switch(boolean2len)
         {
         case 0:
-            return str_i_cmp_2<10, 0>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 0>()(boolean1, boolean2) == 0;
         case 1:
-            return str_i_cmp_2<10, 1>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 1>()(boolean1, boolean2) == 0;
         case 2:
-            return str_i_cmp_2<10, 2>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 2>()(boolean1, boolean2) == 0;
         case 3:
-            return str_i_cmp_2<10, 3>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 3>()(boolean1, boolean2) == 0;
         case 4:
-            return str_i_cmp_2<10, 4>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 4>()(boolean1, boolean2) == 0;
         case 5:
-            return str_i_cmp_2<10, 5>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 5>()(boolean1, boolean2) == 0;
         case 6:
-            return str_i_cmp_2<10, 6>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 6>()(boolean1, boolean2) == 0;
         case 7:
-            return str_i_cmp_2<10, 7>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 7>()(boolean1, boolean2) == 0;
         case 8:
-            return str_i_cmp_2<10, 8>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 8>()(boolean1, boolean2) == 0;
         case 9:
-            return str_i_cmp_2<10, 9>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 9>()(boolean1, boolean2) == 0;
         case 10:
-            return str_i_cmp_2<10, 10>(boolean1, boolean2) == 0;
+            return str_i_cmp_2<10, 10>()(boolean1, boolean2) == 0;
         default:
             return false;
         }
