@@ -1,6 +1,8 @@
 //Public Interface:
 typedef char * const Boolean;
 bool Equal(Boolean boolean1, Boolean boolean2);
+Boolean True = "True";
+Boolean False = "False";
 
 /// PRIVATE!
 template<char C> class to_lower
